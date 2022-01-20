@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>MyOrder</title>
+	<link rel="stylesheet" type="text/css" href="../css/style2.css">
+	<style type="text/css">
+	ul{list-style:none} a {text-decoration: none}h1,h2,h3,h4,h5,h6 {
+	font-family: artifika;
+	font-style: normal;
+	font-weight: 400;
+}
+h1 {
+	font-size: 18px;
+}
+h2 {
+	font-size: 16px;
+}
+h3 {
+	font-size: 14px;
+}
+h4 {
+	font-size: large;
+	color: #1c6dd0;
+}
+h5 {
+	font-size: 35px;
+	color: #0D2945;
+}
+h6 {
+	font-size: larger;
+	color: #0B3262;
+}
+    </style>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/artifika:n4:default.js" type="text/javascript"></script>
+
+</head>
+<body bgcolor="#FFF8F3">
+	<div class="nav_bg">
+    <div class="wrap"> 
+        <ul id="nav" class="nav clearfix">
+            <li class="nLi" style="font-size: 30px;">
+                <h3 class="e"><a  href="#" style="font-size: 23px;">Hungry？</a></h3>
+            </li>
+            <li class="nLi">
+              <h3 class="d"><a  href="index.html">Main</a></h3>
+            </li>
+            <li class="nLi">
+              <h3 class="d"><a href="myorder.html">MyOrder</a></h3>
+            </li>
+            <li class="nLi ">
+              <h3 class="d"><a href="order-statistic.html">OrderList</a></h3>
+            </li>
+        </ul>
+    </div>
+   </div>
+
+   <div class="myorder">
+     <h1 class="m" style="color: #ff7575">MyOrder</h1>
+   </div>
+
+   <div class="order" style="display: none;">
+       <ul >
+           <li id="Beef" class="orderli">
+               <img src="../images/huiguorou.jpg" width="150" height="110" />
+               <span class="food">Beef</span>
+               <span class="num">Num:1</span>
+               <span class="disc">Taste-oriented</span>
+               <span class="price">18RMB</span>
+               <button class="del">Delete</button>
+           </li>
+           <li id="Pepper corn">
+               <img src="../images/qingjiaoyumi.jpg" width="150" height="110" />
+               <span class="food">Pepper corn</span>
+               <span class="num">Num:1</span>
+               <span class="disc">Light taste, fresh vegetarian home-cooked dish</span>
+               <span class="price">10RMB</span>
+               <button class="del">Delete</button>
+           </li>
+           <li id="Noodles">
+               <img src="../images/dandanmian.jpg" width="150" height="110" />
+               <span class="food">Noodles</span>
+               <span class="num">Num：1</span>
+               <span class="disc">Special noodle snacks</span>
+               <span class="price">9RMB</span>
+               <button class="del">Delete</button>
+           </li>
+           <li id="Home-cooked vegetarian meal">
+               <img src="../images/jiachang.jpg" width="150" height="110" />
+               <span class="food">Home-cooked vegetarian meal</span>
+               <span class="num">Num：1</span>
+               <span class="disc">Slightly spicy</span>
+               <span class="price">14RMB</span>
+               <button class="del">Delete</button>
+           </li>
+           <li id="ChilliFish">
+               <img src="../images/duojiaoyutou.jpg" width="150" height="110" />
+               <span class="food">ChilliFish</span>
+               <span class="num">Num：1</span>
+               <span class="disc">SpicyFreshFish</span>
+               <span class="price">88RMB</span>
+               <button class="del">Delete</button>
+           </li>
+           <li id="Braised pork">
+               <img src="../images/hongshaochaocai.jpg" width="150" height="110" />
+               <span class="food">Braised pork</span>
+               <span class="num">Num：1</span>
+               <span class="disc">Pork and Darksource</span>
+               <span class="price">15RMB</span>
+               <button class="del">Delete</button>
+           </li>
+           <li id="Fish eggplant">
+               <img src="../images/yuxiangrousi.jpg" width="150" height="110" />
+               <span class="food">Fish eggplant</span>
+               <span class="num">Num：1</span>
+               <span class="disc">Sour and Spicy</span>
+               <span class="price">18RMB</span>
+               <button class="del">Delete</button>
+           </li>
+           <li id="Special Dumplings">
+               <img src="../images/shuijiao.jpg" width="150" height="110" />
+               <span class="food">Special Dumplings</span>
+               <span class="num">Num：1</span>
+               <span class="disc">leek egg, pork and onion。</span>
+               <span class="price">11RMB</span>
+               <button class="del">Delete</button>
+           </li>
+           <li id="Chilli Pork">
+               <img src="../images/huiguochaocai.jpg" width="150" height="110" />
+               <span class="food">Chilli Pork</span>
+               <span class="num">Num：1</span>
+               <span class="disc">SpicyPork</span>
+               <span class="price">13RMB</span>
+               <button class="del">Delete</button>
+           </li>
+       </ul>
+   </div>
+
+  <div class="order_content" id="first">
+
+   </div>
+   <div class="b_add">
+       <a href="index.html"><button class="add">ADD</button></a>
+   </div>
+   <section class="my_model">
+    <p class="title">Delete<span class="closeModel">X</span></p>
+    <p>Sure Delete?</p>
+    <div class="opBtn">
+        <a href="javascript:;" class="dialog-sure">Yes</a>
+        <a href="javascript:;" class="dialog-close">Close</a>
+    </div>
+   </section>  
+
+   <script type="text/javascript" src="../js/jQuery.js"></script>
+   <script type="text/javascript" src="../js/jquery.dialog.js"></script>
+   
+   <script type="text/javascript">
+     var db = openDatabase('dishes', '1.0', 'fooddatabase', 30*1024*1024);
+     var datatable = document.getElementById("first");
+     var dishnames=new Array();
+
+     showAllData(datatable);
+     function showData(row,datatable,i) {
+        console.log(dishnames.indexOf(row.dishname));
+    if(dishnames.indexOf(row.dishname)!=-1)
+   {
+
+       console.log("repeated");
+   }
+    else{ dishnames.push(row.dishname)
+   
+    var ul=document.createElement("ul");
+    ul.className="order_lists";
+    var li1 = document.getElementById(row.dishname.replace(/(^\s+)|(\s+$)/g,""));
+    ul.appendChild(li1);
+    datatable.appendChild(ul);
+    console.log(datatable)
+    }
+    }
+    function showAllData(datatable) {
+    db.transaction(function(tx) {
+        tx.executeSql("CREATE TABLE IF NOT EXISTS Dingdan(picname TEXT,dishname TEXT,dishdisc TEXT,disprice TEXT,dishnum TEXT)", []);
+        tx.executeSql("SELECT * FROM Dingdan  ", [], function(tx, rs) {
+            
+            for(var i = 0; i < rs.rows.length; i++) {
+                showData(rs.rows.item(i),datatable,i)
+            }
+        })
+    })
+    }
+
+    var $order_lists = null;
+    var $order_content = '';
+    var namer;
+    
+    $('.del').click(function () {
+        $order_lists = $(this).parents('.order_lists');
+        $order_content = $order_lists.parents('.order_content');
+        namer= $(this).parents('.order_lists').find('.food').html();
+       // name=namer.split(">")[1].split("<")[0]
+        console.log(name.length)
+        
+        $('.model_bg').fadeIn(300);
+        $('.my_model').fadeIn(300);
+    });
+   
+
+    
+    $('.closeModel').click(function () {
+        closeM();
+    });
+    $('.dialog-close').click(function () {
+        closeM();
+    });
+    function closeM() {
+        $('.model_bg').fadeOut(300);
+        $('.my_model').fadeOut(300);
+    }
+    
+    $('.dialog-sure').click(function () {
+        $order_lists.remove();
+        if($order_content.html().trim() == null || $order_content.html().trim().length == 0){
+            //$.order_content.parents('.cartBox').remove();
+            $.sendMsg('The craft is empty!', 1000, function() {
+                console.log('sendMsg closed');
+            });
+        }
+        closeM();
+        //$sonCheckBox = $('.son_check');
+        //totalMoney();
+        var db = openDatabase('dishes', '1.0', 'fooddatabase', 30*1024*1024);
+        Deletedish();
+        
+        function Deletedish(datatable) {
+            db.transaction(function(tx) {
+                tx.executeSql("CREATE TABLE IF NOT EXISTS Dingdan(picname TEXT,dishname TEXT,dishdisc TEXT,disprice TEXT,dishnum TEXT)", []);
+                tx.executeSql("DELETE FROM Dingdan WHERE dishname=(?)", [namer], function(tx, rs) {
+                    
+                   console.log("delete success!")
+                })
+            })
+        }
+    })
+   </script>
+</body>
+</html>

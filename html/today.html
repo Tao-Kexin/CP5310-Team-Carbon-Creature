@@ -1,0 +1,280 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>OrderSystem</title>
+  <link href="../css/style1.css"  rel="stylesheet"  media="screen"  type="text/css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/carts.css">
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.dialog.js"></script>
+  <script src="../js/carts.js"></script>
+  <script src="../js/universial.js"></script>
+  <style type="text/css">
+  a {text-decoration: none}body {
+	background-color: #FFF8F3;
+}
+  h1,h2,h3,h4,h5,h6 {
+	font-family: artifika;
+	font-style: normal;
+	font-weight: 400;
+}
+h4 {
+	font-size: large;
+	color: #1c6dd0;
+}
+h5 {
+	font-size: 35%;
+	color: #0D2945;
+}
+h6 {
+	font-size: large;
+	color: #0B3262;
+}
+  </style>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/artifika:n4:default.js" type="text/javascript"></script>
+
+</head>
+<div>
+    <div  class="nav_bg">
+        <div class="wrap"> 
+            <ul id="nav" class="nav clearfix">
+                <li class="nLi" style="font-size: 30px;">
+                    <h3 class="e"><a  href="#" style="font-size: 23px;">Hungry？</a></h3>
+                </li>
+                <li class="nLi">
+                  <h3 class="d"><a  href="./index.html">Main</a></h3>
+                </li>
+                <li class="nLi ">
+                  <h3 class="d"><a href="myorder.html">MyOrder</a></h3>
+                  
+                </li>
+          
+                <li class="nLi ">
+                  <h3 class="d"><a href="order-statistic.html">OrderList</a></h3>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="left" >
+            <ul class="leftborder">
+    
+
+              <li class="border1">
+                <a href="myorder.html">
+                    <img src='../images/dingdan.png' width=14 height=14 />
+                    <h4 class="outer">  MyOrder</h4>
+                    <br>
+                    <span class="inner">3months orders</span>
+                    
+                </a>
+            </li>
+            <li class="border2clicked">
+                <a href="./today.html">
+                    <img src='../images/remaicaipin.png' width=14 height=14 />
+                    <h6 class="outer">Today</h6>
+                    
+                </a>
+            </li>
+            <li class="border3">
+                <a href="./recommend.html">
+                    <img src='../images/tuijian.png' width=14 height=14 />
+                    <h6 class="outer">Recommend</h6>
+                </a>
+            </li>
+            <li class="border4">
+                <a href="./hot.html">
+                    <img src='../images/menu.png' width=14 height=14 />
+                    <h6 class="outer">Hot</h6>
+                </a>
+            </li>
+            <li class="border5">
+                    <a href="./selected.html">
+                        <img src='../images/today.png' width=14 height=14 />
+                        <h6 class="outer">Selected</h6>
+                        
+                    </a>
+            </li>
+                
+                         
+            </ul>
+    </div>
+  
+</div>
+<h5 style="font-size: 16px;  position: absolute; top:8.9%; left:48.5%;text-align: center;"><b>Today</b></h5>
+<div class="projects">
+    <!-- <br>
+    <p style="font-size: 15px; height: 30px;width:300px;background-color: silver;padding: 0 0 0 20px;text-align: center;" >今日菜品</p> -->
+    <ul class="rightborder">
+        <!-- <p style="font-size: 16px;  background-color: rgb(251, 255, 0);text-align: center;">Today</p> -->
+        <li class="instruct">
+          <span style="padding:0px 65px 0 40px;position: relative ;top:25%;"><b>Photo</b> </span>
+          <span style="padding:0px 100px 0 0;position: relative ;top:25%;"><b>Name</b> </span>
+          <span style="padding:0px 110px 0 0;position: relative ;top:25%;"><b>Descriptions</b> </span>
+          <span style="padding:0px 70px 0 30px;position: relative ;top:25%;"><b>Price(1set)</b> </span>
+          <span style="padding:0px 100px 0 0;position: relative ;top:25%;"><b>Foodcomment</b> </span>
+          <span style="padding:0px 0px 0 0;position: relative ;top:25%;"><b>Operation</b></span>
+        </li>
+        <div class="cont">
+        <li class="dishes" id="first">
+            <img src='../images/jiachang.jpg' width=136px height=80px />
+            <span id="one">Home-cooked vegetarian meal </span>          
+            <span id="two">Slightly spicy</span>
+            <span id="three">14(RMB) </span>
+            <span id="four">9Stars</span>
+            <span id="five">
+                <button class="inn" id="order1">Order</button>
+                
+            </span>
+            <span id="six">
+                    <button class="inn" id="evaluate1">Comment</button>
+            </span>
+            
+        </li>
+        <li class="dishes" id="second">
+                <img src='../images/duojiaoyutou.jpg' width=136px height=80px />
+                <span id="one">ChilliFish </span>              
+                <span id="two">SpicyFreshFish</span>
+                <span id="three">88(RMB) </span>
+                <span id="four">8Stars</span>
+                <span id="five">
+                        <button class="inn" id="order2">Order</button>
+                        
+                    </span>
+                <span id="six">
+                    <button class="inn" id="evaluate2">Comment</button>
+                </span>
+                
+            </li>
+            <li class="dishes" id="third">
+                    <img src='../images/hongshaochaocai.jpg' width=136px height=80px />
+                    <span id="one">Braised pork </span>                  
+                    <span id="two">Pork and Darksource</span>
+                    <span id="three">15(RMB) </span>
+                    <span id="four">8Stars</span>
+                    <span id="five">
+                            <button class="inn" id="order3">Order</button>
+                            
+                    </span>
+                    <span id="six">
+                            <button class="inn" id="evaluate3">Comment</button>
+                    </span>
+                    
+                </li>
+                <li class="dishes" id="fourth">
+                        <img src='../images/huiguochaocai.jpg' width=136px height=80px />
+                        <span id="one">Chilli Pork </span>                       
+                        <span id="two">SpicyPork</span>
+                        <span id="three">13(RMB) </span>
+                        <span id="four">8Stars</span>
+                        <span id="five">
+                                <button class="inn" id="order4">Order</button>
+                                
+                            </span>
+                        <span id="six">
+                                <button class="inn" id="evaluate4">Comment</button>
+                        </span>
+                        
+                    </li>
+                    <li class="dishes" id="fifth">
+                            <img src='../images/yuxiangrousi.jpg' width=136px height=80px />
+                            <span id="one">Fish eggplant</span>                           
+                            <span id="two">Sour and Spicy</span>
+                            <span id="three">18(RMB) </span>
+                            <span id="four">9Stars</span>
+                            <span id="five">
+                                    <button class="inn" id="order5">Order</button>
+                                    
+                            </span>
+                            <span id="six">
+                                <button class="inn" id="evaluate5">Comment</button>
+                            </span>
+                            
+                        </li>
+                        <li class="dishes" id="sixth">
+                                <img src='../images/shuijiao.jpg' width=136px height=80px />
+                                <span id="one">Special Dumplings </span>                               
+                                <span id="two">leek egg, pork and onion</span>
+                                <span id="three">11(RMB) </span>
+                                <span id="four">9Stars</span>
+                                <span id="five">
+                                        <button class="inn" id="order6">Order</button>
+                                        
+                                    </span>
+                                    <span id="six">
+                                            <button class="inn" id="evaluate6">Comment</button>
+                                    </span>
+                                
+                            </li>
+                            <li class="dishes" id="seventh">
+                                    <img src='../images/huiguochaocai.jpg' width=136px height=80px />
+                                    <span id="one">Chilli Pork </span>                                 
+                                    <span id="two">SpicyPork</span>
+                                    <span id="three">13(RMB) </span>
+                                    <span id="four">8Stars</span>
+                                    <span id="five">
+                                            <button class="inn" id="order7">Order</button>
+                                            
+                                        </span>
+                                        <span id="six">
+                                                <button class="inn" id="evaluate7">Comment</button>
+                                        </span>
+                                    
+                                </li>
+                            
+                            <li class="dishes" id="eighth">
+                                <img src='../images/dandanmian.jpg' width=136px height=80px />
+                                <span id="one">Noodles </span>                              
+                                <span id="two">Special noodle snacks</span>
+                                <span id="three">9(RMB)</span>
+                                <span id="four">8Stars</span>
+                                <span id="five">
+                                        <button class="inn" id="order8">Order</button>
+                                        
+                                    </span>
+                                    <span id="six">
+                                            <button class="inn" id="evaluate8">Comment</button>
+                                    </span>
+                                
+                            </li>
+                            <li class="dishes" id="ninth">
+                                <img src='../images/qingjiaoyumi.jpg' width=136px height=80px />
+                                <span id="one">Pepper corn</span>                               
+                                <span id="two">Light taste, fresh vegetarian home-cooked dish</span>
+                                <span id="three">10(RMB) </span>
+                                <span id="four">8Stars</span>
+                                <span id="five">
+                                        <button class="inn" id="order9">Order</button>
+                                        
+                                    </span>
+                                    <span id="six">
+                                            <button class="inn" id="evaluate9">Comment</button>
+                                    </span>
+                                
+                            </li>
+                            <li class="dishes" id="tenth">
+                                <img src='../images/huiguorou.jpg' width=136px height=80px />
+                                <span id="one">Beef</span>                              
+                                <span id="two">Taste-oriented</span>
+                                <span id="three">18(RMB) </span>
+                                <span id="four">9Stars</span>
+                                <span id="five">
+                                        <button class="inn" id="order10">Order</button>
+                                        
+                                    </span>
+                                    <span id="six">
+                                            <button class="inn" id="evaluate10">Comment</button>
+                                    </span>
+                                
+                            </li>
+                        </div>
+                        
+                        
+     
+
+             
+                     
+    </ul>
+</div>
+<script src="../js/universial.js"></script>
